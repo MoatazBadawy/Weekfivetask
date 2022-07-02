@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bean_one"
+        android:layout_width="185dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.4d"
+        android:elevation="6dp"
+        android:src="@drawable/bean_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bean_two"
+        android:layout_width="185dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="40dp"
+        android:alpha="0.4d"
+        android:elevation="6dp"
+        android:src="@drawable/bean_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bean_one" />
+
+    <ImageView
+        android:id="@+id/bean_three"
+        android:layout_width="185dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0.4d"
+        android:elevation="6dp"
+        android:src="@drawable/bean_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circle" />
+
+    <ImageView
+        android:id="@+id/bean_four"
+        android:layout_width="185dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-90dp"
+        android:alpha="0.4d"
+        android:elevation="6dp"
+        android:src="@drawable/bean_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cup" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="6dp"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/add_to_cart"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@id/back" />
+
+    <ImageView
+        android:id="@+id/add_to_cart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_add_to_cart"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/circel_cup"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/add_to_cart"
+        app:layout_constraintTop_toTopOf="@+id/add_to_cart" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="265dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/circel_cup"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/cup"
+        android:layout_width="333dp"
+        android:layout_height="397dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/cup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/cup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:elevation="6dp"
+        android:text="Caramel\nFrappuccino"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+    <TextView
+        android:id="@+id/cup_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="6dp"
+        android:text="$30.00"
+        android:textColor="@color/green"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+    <TextView
+        android:id="@+id/offer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:text="Best Sales"
+        android:textColor="#C9CACC"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cup_price"
+        app:layout_constraintTop_toBottomOf="@+id/cup_price" />
+
+    <TextView
+        android:id="@+id/size_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        android:text="Size Options"
+        android:textColor="#C9CACC"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cup_name"
+        app:layout_constraintTop_toBottomOf="@+id/cup_name" />
+
+    <ImageView
+        android:id="@+id/size_one"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circel_cup_two"
+        app:layout_constraintEnd_toStartOf="@+id/size_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_options" />
+
+    <ImageView
+        android:id="@+id/cup_one"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/cup_size_two"
+        app:layout_constraintBottom_toBottomOf="@+id/size_one"
+        app:layout_constraintEnd_toEndOf="@+id/size_one"
+        app:layout_constraintStart_toStartOf="@+id/size_one"
+        app:layout_constraintTop_toTopOf="@+id/size_one" />
+
+    <TextView
+        android:id="@+id/tall_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tall"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/size_one"
+        app:layout_constraintStart_toStartOf="@+id/size_one"
+        app:layout_constraintTop_toBottomOf="@+id/size_one" />
+
+    <TextView
+        android:id="@+id/oz_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 FI Oz"
+        android:textColor="#C9CACC"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tall_options"
+        app:layout_constraintStart_toStartOf="@+id/tall_options"
+        app:layout_constraintTop_toBottomOf="@+id/tall_options" />
+
+    <ImageView
+        android:id="@+id/size_two"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circel_cup_two"
+        app:layout_constraintEnd_toStartOf="@+id/size_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/size_one"
+        app:layout_constraintTop_toBottomOf="@+id/size_options" />
+
+    <ImageView
+        android:id="@+id/cup_two"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/cup_size_two"
+        app:layout_constraintBottom_toBottomOf="@+id/size_two"
+        app:layout_constraintEnd_toEndOf="@+id/size_two"
+        app:layout_constraintStart_toStartOf="@+id/size_two"
+        app:layout_constraintTop_toTopOf="@+id/size_two" />
+
+    <TextView
+        android:id="@+id/grande_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Grande"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/size_two"
+        app:layout_constraintStart_toStartOf="@+id/size_two"
+        app:layout_constraintTop_toBottomOf="@+id/size_two" />
+
+    <TextView
+        android:id="@+id/oz_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16 FI Oz"
+        android:textColor="#C9CACC"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/grande_options"
+        app:layout_constraintStart_toStartOf="@+id/grande_options"
+        app:layout_constraintTop_toBottomOf="@+id/grande_options" />
+
+    <ImageView
+        android:id="@+id/size_three"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circel_cup"
+        app:layout_constraintEnd_toStartOf="@+id/size_four"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/size_two"
+        app:layout_constraintTop_toBottomOf="@+id/size_options" />
+
+    <ImageView
+        android:id="@+id/cup_three"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/cup_size"
+        app:layout_constraintBottom_toBottomOf="@+id/size_three"
+        app:layout_constraintEnd_toEndOf="@+id/size_three"
+        app:layout_constraintStart_toStartOf="@+id/size_three"
+        app:layout_constraintTop_toTopOf="@+id/size_three" />
+
+    <TextView
+        android:id="@+id/venti_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Venti"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/size_three"
+        app:layout_constraintStart_toStartOf="@+id/size_three"
+        app:layout_constraintTop_toBottomOf="@+id/size_three" />
+
+    <TextView
+        android:id="@+id/oz_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 FI Oz"
+        android:textColor="#C9CACC"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/venti_options"
+        app:layout_constraintStart_toStartOf="@+id/venti_options"
+        app:layout_constraintTop_toBottomOf="@+id/venti_options" />
+
+    <ImageView
+        android:id="@+id/size_four"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circel_cup_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/size_three"
+        app:layout_constraintTop_toBottomOf="@+id/size_options" />
+
+    <ImageView
+        android:id="@+id/cup_four"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/cup_size_two"
+        app:layout_constraintBottom_toBottomOf="@+id/size_four"
+        app:layout_constraintEnd_toEndOf="@+id/size_four"
+        app:layout_constraintStart_toStartOf="@+id/size_four"
+        app:layout_constraintTop_toTopOf="@+id/size_four" />
+
+    <TextView
+        android:id="@+id/custom_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Custom"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/size_four"
+        app:layout_constraintStart_toStartOf="@+id/size_four"
+        app:layout_constraintTop_toBottomOf="@+id/size_four" />
+
+    <TextView
+        android:id="@+id/oz_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_ _ FI Oz"
+        android:textColor="#C9CACC"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/custom_options"
+        app:layout_constraintStart_toStartOf="@+id/custom_options"
+        app:layout_constraintTop_toBottomOf="@+id/custom_options" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minus_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circel_cup"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cup_count"
+        app:layout_constraintEnd_toStartOf="@+id/cup_count"
+        app:layout_constraintStart_toStartOf="@+id/size_one"
+        app:layout_constraintTop_toTopOf="@+id/cup_count" />
+
+    <TextView
+        android:id="@+id/cup_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/plus_button"
+        app:layout_constraintStart_toEndOf="@+id/minus_button"
+        app:layout_constraintTop_toTopOf="@+id/plus_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/circel_cup"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/order_button"
+        app:layout_constraintStart_toEndOf="@+id/cup_count"
+        app:layout_constraintTop_toTopOf="@+id/order_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/order_button"
+        android:layout_width="174dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/order_shape"
+        android:text="Add to Order"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cup_count"
+        app:layout_constraintTop_toBottomOf="@+id/oz_four" />
+</androidx.constraintlayout.widget.ConstraintLayout>
