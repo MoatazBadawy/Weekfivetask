@@ -6,4 +6,8 @@
     <color name="nato_blue">#122940</color>
     <color name="bold_gray">#7A8185</color>
     <color name="red">#FF0D0D</color>
+    <color name="green">#48ac7a</color>
+    <color name="cart">#D1C4A0</color>
+    <color name="best_over">#d4d5d6</color>
+    <color name="green_light">#f0f7f2</color>
 </resources>
